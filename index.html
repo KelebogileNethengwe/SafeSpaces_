@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts CDN Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="Metro.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="navbar">
+          <a href="#">
+            <img src="Media/bus-side-view.png" class="logo" />
+          </a>
+          <ul>
+            <li><a href="#" class="nav-link active">home</a></li>
+            <li><a href="#aboutUs" class="nav-link">about</a></li>
+            <li><a href="#" class="nav-link">services</a></li>
+
+            <li><a href="dashboard.html" class="nav-link">sign In</a></li>
+            <li><a href="signInsignUp.html" class="nav-link">Sign Up</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <img src="Media/family.png" class="spider-man" />
+      <div class="nav-container">
+        <div class="hero-content">
+          <h1>Welcome to Safe Spaces</h1>
+          <p>
+            Safe Spaces is an initiative aimed at creating <br />safe
+            environments for victims of Gender-Based <br />Violence (GBV). This
+            dashboard provides essential<br />
+            resources and support for those affected by GBV.
+          </p>
+          <div class="btn-group">
+            <a href="#" class="btn btn-fill">know more</a>
+            <a href="#" class="btn btn-stroke">sign up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-section">
+      <h2 class="about-heading" id="aboutUs">About SafeSpaces</h2>
+      <div class="cards-container">
+        <div class="card">
+          <div class="icon">
+            <i class="pe-7s-arc"></i>
+          </div>
+          <h3>Core Values</h3>
+          <p>
+            Cooperation<br />
+            Accountability<br />
+            Honesty
+          </p>
+          <a href="#" class="read-more-btn">read more</a>
+          <div class="back-text">rh</div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="pe-7s-diamond"></i>
+          </div>
+          <h3>Mission</h3>
+          <p>
+            To promote accessible, reliable and environmentally friendly
+            mobility through an efficient and sustainable bus service
+          </p>
+          <a href="#" class="read-more-btn">read more</a>
+          <div class="back-text">wo</div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="pe-7s-magnet"></i>
+          </div>
+          <h3>Vision</h3>
+          <p>
+            To be a people centered, performance driven provider of an efficient
+            conventional bus service within the integrated public transport
+            network
+          </p>
+          <a href="#" class="read-more-btn">read more</a>
+          <div class="back-text">is</div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Form-->
+    <section id="contactUs">
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <img src="Media/map.png" alt="" width="30px" />
+              <div class="topic">Address</div>
+              <div class="text-two">
+                Transportation House, No 1 Raikes Road, Braamfontein, 2001
+              </div>
+            </div>
+            <div class="phone details">
+              <img src="Media/telephone.png" alt="" width="30px" />
+              <div class="topic">Call us</div>
+              <div class="text-two">0800 004 826</div>
+            </div>
+            <div class="email details">
+              <img src="Media/gmail.png" alt="" width="30px" />
+              <div class="topic">Email us</div>
+              <div class="text-two">customer.serv@mbus.joburg.org.za</div>
+            </div>
+          </div>
+
+          <div class="right-side">
+            <h2>Send us a Message</h2>
+            <p>
+              Gandhi Square Information Centre Our info center is inside the
+              mall on Gandhi square while the ticket outlets are in the middle
+              of the square.Staff (information officers) are available to give
+              advice and information on routes and timetables also on zones to
+              be travalled and appropriate bus fare for these zones. They will
+              also assist you with buying the correct smartcard and trip
+              configuration ;in addition they will provide assisstance with any
+              smartcard problems.
+            </p>
+            <form action="https://formspree.io/f/xdovyppa" method="POST">
+              <div class="input-box">
+                <input
+                  name="Name"
+                  type="text"
+                  placeholder="Your name*"
+                  class="text3"
+                  id="username"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Your email*"
+                  class="text3"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="Phone Number"
+                  placeholder="Your phone*"
+                  class="text3"
+                  id="userNumber"
+                  required
+                />
+              </div>
+              <div class="input-box message-box">
+                <textarea
+                  name="Message"
+                  class="text3"
+                  placeholder="Your message"
+                  id="userMessage"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  id="button"
+                  src="contactForm.html"
+                  onclick="openPopup()"
+                >
+                  Submit Enquiry
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="wrapper">
+          <div class="footer-widget">
+            <h2>Other Contacts</h2>
+            <p class="desc">
+              Physical Address: Corner Main and Rissik Street Tel: 011 833 5918
+              Email: Customer.serv@mbus.joburg.org.za<br />
+              Operating Hours: 06h00 - 18h00 (Monday to Friday) <br />08h00 -
+              14h00 (Saturday) <br />Closed on Sunday and Public Holidays
+            </p>
+            <ul class="socials">
+              <li>
+                <a href="#">
+                  <img src="Media/facebook.png" width="25px" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Media/instagram.png" width="25px" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Media/twitter.png" width="25px" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Media/gmail.png" width="25px" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h6>Quick Link</h6>
+            <ul class="links">
+              <li><a href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">service</a></li>
+              <li><a href="#">testimonial</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h6>Services</h6>
+            <ul class="links">
+              <li><a href="#">web design</a></li>
+              <li><a href="#">web development</a></li>
+              <li><a href="#">seo optimization</a></li>
+              <li><a href="#">blog writing</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget">
+            <h6>Help &amp; Support</h6>
+            <ul class="links">
+              <li><a href="#">support center</a></li>
+              <li><a href="#">live chat</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">terms &amp; conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright-wrapper">
+          <p>
+            Created by
+            <span>Real Housewives of ILS</span> | All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Custom js -->
+    <script src="Metro.js"></script>
+  </body>
+</html>

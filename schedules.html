@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bus Services App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Instrument+Serif&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="schedules.css" />
+  </head>
+  <body>
+    <section class="schedules-into">
+      <h1>Metrobus Timetables</h1>
+      <p>
+        Please select your location and destination from the dropdown menu after
+        <br />
+        clicking the button below
+      </p>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+          Choose your Location and Destination
+        </button>
+        <div id="myDropdown" class="dropdown-content">
+          <input
+            type="text"
+            placeholder="Search.."
+            id="myInput"
+            onkeyup="filterFunction()"
+          />
+
+          <a href="#witpoortjie-ghandi">Witpoortjie to Ghandi</a>
+          <a href="#ghandi-witpoortjie">Ghandi to Witpoortjie</a>
+          <a href="#ghandi-rosebank">Ghandi to Rosebank</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ghandi-witpoortjie-schedule">
+      <h2 class="left-table-label" id="ghandi-witpoortjie">
+        Ghandi Square to Witpoortjie
+      </h2>
+
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Morning Buses</th>
+            <th>Afternoon Buses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>06:10</td>
+            <td>12:20</td>
+          </tr>
+          <tr>
+            <td>06:30</td>
+            <td>13:15</td>
+          </tr>
+          <tr>
+            <td>06:50</td>
+            <td>14:00</td>
+          </tr>
+          <tr>
+            <td>07:05</td>
+            <td>14:30</td>
+          </tr>
+          <tr>
+            <td>07:35</td>
+            <td>15:00</td>
+          </tr>
+          <tr>
+            <td>07:50</td>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>08:10</td>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>08:15</td>
+            <td>16:10</td>
+          </tr>
+          <tr>
+            <td>08:30</td>
+            <td>16:20</td>
+          </tr>
+          <tr>
+            <td>09:00</td>
+            <td>16:30</td>
+          </tr>
+          <tr>
+            <td>09:45</td>
+            <td>16:40</td>
+          </tr>
+          <tr>
+            <td>10:45</td>
+            <td>16:50</td>
+          </tr>
+          <tr>
+            <td>11:30</td>
+            <td>17:00</td>
+          </tr>
+          <tr>
+            <td>12:20</td>
+            <td>17:15</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>17:30</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>18:15</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>19:00</td>
+          </tr>
+        
+        </tbody>
+      </table>
+
+      <h2 class="right-table-label" id="witpoortjie-ghandi">
+        Witpoortjie to Ghandi Square
+      </h2>
+      <table class="content-table right-table">
+        <thead>
+          <tr>
+            <th>Morning Buses</th>
+            <th>Afternoon Buses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>04:40</td>
+            <td>12:45</td>
+          </tr>
+          <tr>
+            <td>04:55</td>
+            <td>13:35</td>
+          </tr>
+          <tr>
+            <td>05:10</td>
+            <td>14:10</td>
+          </tr>
+          <tr>
+            <td>05:25</td>
+            <td>14:45</td>
+          </tr>
+          <tr>
+            <td>05:40</td>
+            <td>15:00</td>
+          </tr>
+          <tr>
+            <td>05:45</td>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>06:10</td>
+            <td>15:45</td>
+          </tr>
+          <tr>
+            <td>06:30</td>
+            <td>16:20</td>
+          </tr>
+          <tr>
+            <td>07:00</td>
+            <td>16:50</td>
+          </tr>
+          <tr>
+            <td>07:30</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>08:00</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>08:30</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>08:45</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>09:45</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>10:45</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>11:45</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12:45</td>
+            <td>-</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+      <h2 class="left-table-label" id="ghandi-rosebank">
+        Ghandi Square to Rosebank
+      </h2>
+
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Morning Buses</th>
+            <th>Afternoon Buses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>06:10</td>
+            <td>12:20</td>
+          </tr>
+          <tr>
+            <td>06:30</td>
+            <td>13:15</td>
+          </tr>
+          <tr>
+            <td>06:50</td>
+            <td>14:00</td>
+          </tr>
+          <tr>
+            <td>07:05</td>
+            <td>14:30</td>
+          </tr>
+          <tr>
+            <td>07:35</td>
+            <td>15:00</td>
+          </tr>
+          <tr>
+            <td>07:50</td>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>08:10</td>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>08:15</td>
+            <td>16:10</td>
+          </tr>
+          <tr>
+            <td>08:30</td>
+            <td>16:20</td>
+          </tr>
+          <tr>
+            <td>09:00</td>
+            <td>16:30</td>
+          </tr>
+          <tr>
+            <td>09:45</td>
+            <td>16:40</td>
+          </tr>
+          <tr>
+            <td>10:45</td>
+            <td>16:50</td>
+          </tr>
+          <tr>
+            <td>11:30</td>
+            <td>17:00</td>
+          </tr>
+          <tr>
+            <td>12:20</td>
+            <td>17:15</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>17:30</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>18:15</td>
+          </tr>
+          <tr>
+            <td>-</td>
+            <td>19:00</td>
+          </tr>
+       
+        </tbody>
+      </table>
+    </div>
+
+    <script src="schedules.js"></script>
+  </body>
+</html>
