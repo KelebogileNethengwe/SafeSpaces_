@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+     <link rel="stylesheet" href="community.css" type="text/css" />
+    <link rel="stylesheet" href="dashboard.css" type="text/css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8wSR6iW7ZHSD3KPUDYP9dXlGovy1RxhE&callback=initMap&libraries=geometry,places&v=weekly"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <p class="logo">SafeSpaces <span class="menu">☰</span></p>
+      <p class="logo1"><span class="menu1">☰</span></p>
+      <a href="dashboard.html" class="icon-a "
+        ><i class="fa fa-dashboard icons"></i>Your Safety</a
+      >
+      <a href="awareness.html" class="icon-a"
+        ><i class="fa fa-pie-chart icons"></i>Awareness</a
+      >
+      <a href="counselling.html" class="icon-a"
+        ><i class="fa fa-list icons"></i> Counselling</a
+      >
+
+      <a href="alerts.html" class="icon-a"
+        ><i class="fa fa-tasks icons"></i> Alerts</a
+      >
+      <a href="community.html" class="icon-a active"
+        ><i class="fa fa-tasks icons"></i> Community</a
+      >
+      <a href="#" class="icon-a"><i class="fa fa-bell icons"></i> Settings</a>
+      <a href="signInsignUp.html" class="icon-a"
+        ><i class="fa fa-circle icons"></i>Sign Out</a
+      >
+    </div>
+    <div id="main">
+      <div class="head">
+        <div class="col-div-6">
+          <p class="nav">Dashboard</p>
+        </div>
+
+        <script>
+      $(".menu").click(function () {
+        $("#mySidenav").css("width", "70px");
+        $("#main").css("margin-left", "70px");
+        $(".logo").css("display", "none");
+        $(".logo1").css("display", "block");
+        $(".logo span").css("visibility", "visible");
+        $(".logo span").css("margin-left", "-10px");
+        $(".icon-a").css("visibility", "hidden");
+        $(".icon-a").css("height", "25px");
+        $(".icons").css("visibility", "visible");
+        $(".icons").css("margin-left", "-8px");
+        $(".menu1").css("display", "block");
+        $(".menu").css("display", "none");
+      });
+
+      $(".menu1").click function () {
+        $("#mySidenav").css("width", "300px");
+        $("#main").css("margin-left", "300px");
+        $(".logo").css("visibility", "visible");
+        $(".logo").css("display", "block");
+        $(".icon-a").css("visibility", "visible");
+        $(".icons").css("visibility", "visible");
+        $(".menu").css("display", "block");
+        $(".menu1").css("display", "none");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".profile p").click(function () {
+          $(".profile-div").toggle();
+        });
+        $(".noti-icon").click(function () {
+          $(".notification-div").toggle();
+        });
+      });
+    </script>
+    <script src="dashboard.js"></script>
+
+    <div>
+            <div class="container content">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+        	<div class="card">
+        		<div class="card-header">Chat</div>
+        		<div class="card-body height3">
+        			<ul class="chat-list">
+        				<li class="in">
+        					<div class="chat-img">
+        						<img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+        					</div>
+        					<div class="chat-body">
+        						<div class="chat-message">
+        							<h5>Jimmy Willams</h5>
+        							<p>Raw denim heard of them tofu master cleanse</p>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="out">
+        					<div class="chat-img">
+        						<img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar6.png">
+        					</div>
+        					<div class="chat-body">
+        						<div class="chat-message">
+        							<h5>Serena</h5>
+        							<p>Next level veard</p>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="in">
+        					<div class="chat-img">
+        						<img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+        					</div>
+        					<div class="chat-body">
+        						<div class="chat-message">
+        							<h5 class="name">Jimmy Willams</h5>
+        							<p>Will stumptown scenes coffee viral.</p>
+        						</div>
+        					</div>
+        				</li>
+  </body>
+</html>
