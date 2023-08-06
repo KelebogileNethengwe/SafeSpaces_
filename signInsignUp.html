@@ -11,19 +11,15 @@
     <title>Sign in & Sign up Form</title>
   </head>
   <body>
-
-<header>
+    <header>
       <div class="nav-container">
         <div class="navbar">
-          <a href="#">
-            
-          </a>
+          <a href="#"> </a>
           <ul>
             <li><a href="index.html" class="nav-link active">home</a></li>
             <li><a href="#aboutUs" class="nav-link">about</a></li>
             <li><a href="#" class="nav-link">services</a></li>
             <li><a href="#contactUs" class="nav-link">contact</a></li>
-            
           </ul>
           <div class="hamburger">
             <span></span>
@@ -34,11 +30,10 @@
       </div>
     </header>
 
-
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
+          <form action="yoursafety.html" class="sign-in-form">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -49,14 +44,16 @@
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
-            
-           
           </form>
           <form action="#" class="sign-up-form">
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Surname" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
@@ -69,6 +66,26 @@
             <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
+            </div>
+            <div class="container2">
+              <h1 class="heading">Location Selection</h1>
+              <div class="location-form">
+                <label for="location-select">Select your location:</label>
+                <select id="location-select">
+                  <option value="">-- Select a location --</option>
+                  <option value="New York">New York</option>
+                  <option value="London">London</option>
+                  <option value="Tokyo">Tokyo</option>
+                  <!-- Add more options as needed -->
+                </select>
+                <button class="add-button" onclick="addLocation()">
+                  Add Location
+                </button>
+              </div>
+              <div class="selected-locations">
+                <h2 class="result-heading">Selected Locations:</h2>
+                <ul id="selected-locations-list"></ul>
+              </div>
             </div>
             <input type="submit" class="btn" value="Sign up" />
             <p class="social-text">Or Sign up with social platforms</p>
