@@ -443,3 +443,34 @@ tr:nth-child(even) {
   font-size: 2em;
   color: #6c7293;
 }
+
+.red-button {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 85px;
+}
+
+#map {
+  
+  position: relative;
+  left: 450px;
+  top: 140px;
+}
+
+
+.active {
+    color: #fff; /* Active link color */
+    background-color: #007bff; /* Active link background color */
+}
