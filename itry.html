@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="signInsignUp.css" />
-    <title>Sign in & Sign up Form</title>
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <script src="j.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="signInsignUp.css" />
+  <link rel="stylesheet" href="si.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+    }
+    /* Add any additional styles as needed */
+  </style>
+  <title>Sign in & Sign up Form</title>
+</head>
+<body>
+ <header>
       <div class="nav-container">
         <div class="navbar">
           <a href="#"> </a>
@@ -133,6 +148,25 @@
       </div>
     </div>
 
-    <script src="signInsignUp.js"></script>
-  </body>
+  <!-- Your existing HTML content here -->
+
+<script>
+  const signUpButton = document.getElementById("sign-up-btn");
+  const signInButton = document.getElementById("sign-in-btn");
+  const container = document.querySelector(".container");
+
+  signUpButton.addEventListener("click", () => {
+    container.classList.add("sign-up-mode");
+  });
+
+  signInButton.addEventListener("click", () => {
+    container.classList.remove("sign-up-mode");
+  });
+
+  function addLocation() {
+    // JavaScript function to handle adding a location (if needed)
+  }
+</script>
+
+</body>
 </html>
